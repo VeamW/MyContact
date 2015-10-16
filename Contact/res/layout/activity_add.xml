@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:text="姓：" />
+
+                <EditText android:id="@+id/firstName"
+                    android:layout_width="0dp"
+                    android:layout_height="6mm"
+                    android:layout_weight="5"
+                    android:background="@android:drawable/edit_text" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="名：" />
+
+                <EditText android:id="@+id/lastName"
+                    android:layout_width="0dp"
+                    android:layout_height="6mm"
+                    android:layout_weight="5"
+                    android:background="@android:drawable/edit_text" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    
+    
+    <TableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+        
+        <TableRow 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1mm"
+                android:src="@drawable/face6"
+                />
+            
+            <TextView 
+                android:textColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_marginLeft="1mm"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="电话："
+                />
+            
+            <EditText 
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@android:color/white"
+                />
+            
+        </TableRow>
+        
+        <TableRow 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1mm"
+                android:src="@drawable/face2"
+                />
+            
+            <TextView 
+                android:textColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_marginLeft="1mm"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="短信："
+                />
+            
+            <EditText android:id="@+id/msg"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                />
+            
+        </TableRow>
+        
+        
+         
+         <TableRow 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1mm"
+                android:src="@drawable/face4"
+                />
+            
+            <TextView 
+                android:textColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_marginLeft="1mm"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="住址："
+                />
+            
+            <EditText android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+        
+    </TableLayout>
+    
+    <ImageButton 
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu_create"
+        android:layout_gravity="center"
+        android:background="@drawable/background"
+        />
+    
+</LinearLayout>
